@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta charset="utf-8">
+  <title>Pedir Taxi</title>
+  <link rel="stylesheet" href="estilos.css">
+  <script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBzq5jw8k2nNtCAg6jItQ5B_8z6Zi7IuSA'></script>
+  <script src="jquery.min.js"></script>
+  <script src="mapa.js"></script>
+</head>
+<body>
+
+  <div id="map-canvas" style="float:left;width:70%; height:100%"></div>
+
+  <div id="directionsPanel" style="float:right;width:30%;height 100%;">
+    <form action="" method="POST">
+      <input type="text" placeholder="origen" id="origen">
+      <input type="text" placeholder="destino" id="destino">
+      <button type="submit" id="confirmar">Confirmar</button>
+    </form>
+      <button id="calcular">Calcular</button>
+      <p>Distancia Total: <span id="total"></span></p>
+  </div>
+
+</body>
+</html>
